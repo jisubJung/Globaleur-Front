@@ -1,13 +1,11 @@
 import React from 'react';
-import Link from 'next/link';
 
 const Home = () => {
-    return (
-        <>
-            <Link href="/about"><a>About Page</a></Link>
-            <div>Hello, React!</div>
-        </>
-    );
+	return (
+		<>
+			<div>메인페이지</div>
+		</>
+	);
 };
 
 export default Home;
