@@ -99,6 +99,7 @@ build/Release
 node_modules/
 jspm_packages/
 front/.next/*
+front/node_modules/
 front/node_modules/*
 front/node_modules/next/*
 front/node_repl_history/next-redux-wrapper/
