@@ -136,3 +136,4 @@ typings/
 .serverless
 /front/build/
 react-globaleur.pem
+globaleur-front.pem
