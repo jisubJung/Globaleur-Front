@@ -101,7 +101,11 @@ jspm_packages/
 front/.next/*
 front/node_modules/*
 front/node_modules/next/*
-front/node_repl_history/next-redux-wrapper/*
+front/node_repl_history/next-redux-wrapper/
+front/node_modules/next/package.json
+front/node_modules/next-redux-wrapper/package.json
+front/node_modules/next/dist/bin/next/
+front/node_modules/next/dist/bin/next/*
 
 # TypeScript v1 declaration files
 typings/
