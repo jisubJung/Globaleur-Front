@@ -98,6 +98,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+front/node_modules/
+front/node_modules/next/
+front/node_repl_history/next-redux-wrapper/
 
 # TypeScript v1 declaration files
 typings/
