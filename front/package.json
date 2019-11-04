@@ -1,0 +1,32 @@
+{
+	"name": "react-globaleur-front",
+	"version": "0.0.1",
+	"description": "Globaleur web front for React",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"author": "Globaleur-web-development-team-korea",
+	"license": "MIT",
+	"dependencies": {
+		"antd": "^3.24.1",
+		"next": "^9.1.2",
+		"next-redux-wrapper": "^4.0.1",
+		"prop-types": "^15.7.2",
+		"react": "^16.11.0",
+		"react-dom": "^16.11.0",
+		"react-redux": "^7.1.1",
+		"redux": "^4.0.4",
+		"redux-saga": "^1.1.1"
+	},
+	"devDependencies": {
+		"eslint": "^6.6.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-react": "^7.16.0",
+		"eslint-plugin-react-hooks": "^2.2.0",
+		"nodemon": "^1.19.4",
+		"webpack": "^4.41.2"
+	}
+}
