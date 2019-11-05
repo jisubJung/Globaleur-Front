@@ -5,9 +5,9 @@ import { Layout, Menu, Button } from 'antd';
 
 import LoginModal from './LoginModal';
 
-const { Header, Content, Footer } = Layout;
-
 const AppLayout = ({ children }) => {
+    const { Header, Content, Footer } = Layout;
+
     return (
         <Layout className="layout">
             <Header>
