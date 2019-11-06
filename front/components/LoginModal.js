@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button, Modal } from 'antd';
 
 const LoginModal = () => {
 	const [loginOpened, setLoginOpened] = useState(false);
 	const [signupOpened, setSignupOpened] = useState(false);
+
+	const inputRef = useRef(null);
 
 	const openModal = (modalType) => {
 		if (modalType === 'login') {
@@ -13,6 +15,7 @@ const LoginModal = () => {
 			setLoginOpened(false);
 			setSignupOpened(true);
 		}
+		inputRef.current.focus();
 	};
 
 	const closeModal = (modalType) => {
@@ -31,6 +34,7 @@ const LoginModal = () => {
 			<Modal visible={loginOpened} closable={false} footer={null}>
 				<Button onClick={() => closeModal('login')}></Button>
 				<div>로그인 모달</div>
+				<Input ref={inputRef} />
 				<Button onClick={() => openModal('signup')}>가입하기</Button>
 			</Modal>
 			<Modal visible={signupOpened} closable={false} footer={null}>
