@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Steps, Button, message } from 'antd';
 
-
-
-const SignIn = () => {
+const Signup = () => {
     const { Step } = Steps;
 
     const [steps, setSteps] = useState(0);
@@ -58,4 +56,4 @@ const SignIn = () => {
     );
 };
 
-export default SignIn;
+export default Signup;

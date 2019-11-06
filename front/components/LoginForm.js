@@ -1,18 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Form, Input, Tooltip, Icon, Button } from 'antd';
-import Router from 'next/router';
-
-import SignIn from './SignIn';
 
 const LoginForm = () => {
-    const [signup, setSignup] = useState(false);
-
-    useEffect(() => {
-        if (setSignup(true)) {
-            Router.push('/SignIn');
-        }
-	}, [setSignup && setSignup]);
-
     return (
         <Form style={{ marginTop: '30px' }}>
             <Input required placeholder="Enter your Id" prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
@@ -23,7 +12,8 @@ const LoginForm = () => {
                 }
             />
             <Input.Password style={{ marginTop: '10px' }} required placeholder="Enter your password" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} />
-            <Button type="primary" onClick={() => setSignup(true)}>Sign in</Button>
+            <Button type="primary">Sign in</Button>
+            <Button>가입하기</Button>
         </Form>
     );
 };
