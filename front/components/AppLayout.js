@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { Layout, Menu, Button } from 'antd';
+import { Layout, Menu } from 'antd';
 
 import LoginModal from './LoginModal';
-import { relative } from 'path';
 import FooterSection from './FooterSection';
 
 const AppLayout = ({ children }) => {
