@@ -6,9 +6,9 @@ import { Layout, Menu, Button } from 'antd';
 import LoginModal from './LoginModal';
 import { relative } from 'path';
 
-const { Header, Content, Footer } = Layout;
-
 const AppLayout = ({ children }) => {
+    const { Header, Content, Footer } = Layout;
+
     return (
         <Layout className="layout" style={{position: 'relative'}}>
             <Header style={{position:'absolute', width: '100%'}}>
